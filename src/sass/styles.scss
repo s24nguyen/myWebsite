@@ -1,2 +1,8 @@
 @import './variables';
 @import './mixins';
+
+body, html, h1{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

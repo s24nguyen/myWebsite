@@ -1,0 +1,37 @@
+@import '~sass/variables';
+
+div{
+    // background: rgb(80, 76, 76);
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 2fr repeat(3, 1fr);
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li{
+            color: snow;
+            border-right: 1px $navBorder solid;
+            //border-bottom: 3px $navBorder solid;
+            text-align: center;
+            font-size: 1.5em;
+
+            &:first-child{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            &:last-child{
+                border-right: none;
+            }
+
+            a{
+                display: block;
+                cursor: pointer;
+                transition: letter-spacing 1s ease;
+                
+            &:hover{
+                letter-spacing: 2.5px;
+            }
+            }
+        }
+    }
+}
