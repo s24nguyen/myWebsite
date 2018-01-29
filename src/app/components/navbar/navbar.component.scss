@@ -1,23 +1,28 @@
 @import '~sass/variables';
 
-div{
+nav{
     // background: rgb(80, 76, 76);
     ul{
         display: grid;
-        grid-template-columns: repeat(3, 1fr) 2fr repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        
         list-style-type: none;
         padding: 0;
         margin: 0;
+
+        @media screen and (min-width: 600px){
+            grid-template-columns: repeat(5, 1fr);
+        }
         li{
-            color: snow;
+            color: green;
             border-right: 1px $navBorder solid;
             //border-bottom: 3px $navBorder solid;
             text-align: center;
             font-size: 1.5em;
 
             &:first-child{
-                grid-column-start: 2;
-                grid-column-end: 3;
+                // grid-column-start: 2;
+                // grid-column-end: 3;
             }
             &:last-child{
                 border-right: none;
@@ -34,4 +39,9 @@ div{
             }
         }
     }
+}
+
+img{
+    max-width: 50%;
+    height: auto;
 }

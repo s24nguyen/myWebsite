@@ -1,0 +1,56 @@
+
+#background{
+    background: black;
+    height: 100vh;
+}
+.content{
+    color: #fff;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+    margin: 0 auto;
+    background:black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, minmax(50px, auto));
+    grid-gap: 11px;
+    div{
+        background: #9B0F0F;
+        padding: 30px;
+        margin: 0px 10px;
+        border-radius: 7px;
+    }
+    div:nth-child(even){
+        background: #2F6B9E;
+    }
+}
+
+.aboutMe{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    // grid-column: 1/3;
+    // grid-row: 2/3;
+}
+.myHobbies{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    // grid-column: 2/4;
+    // grid-row: 3/4;
+}
+.projects{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    // grid-column: 3/5;
+    // grid-row: 5/6;
+}
+.bakeryShop{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    // grid-column: 4/6;
+    // grid-row: 6/7;
+}
+.logo{
+    grid-column: 3/4;
+    // grid-row: 4/5;
+    background: none !important;
+}
