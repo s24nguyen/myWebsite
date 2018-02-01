@@ -1,0 +1,85 @@
+@import '~sass/variables';
+@import "~sass/mixins";
+
+.container{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: 
+    "navbar content";
+
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    grid-area: navbar;
+}
+main{
+    background: $customBackground;
+    padding: 10px;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "ml ml ml ml ml mx mx"
+    "ml ml ml ml ml mx mx";
+
+    div{
+        background: snow;
+        &:nth-child(even){
+            background: grey;
+        }
+    }
+
+    .myBackground{
+        grid-area: mb;
+    }
+    .myEducation{
+        grid-area: me;
+    }
+    .myExperience{
+        grid-area: mx;
+    }
+    .myLinks{
+        grid-area: ml;
+    }
+}
+
+@media screen and(max-width: 760px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr;
+        grid-template-areas: 
+        "navbar"
+        "content";
+    }
+    header{
+        ul{
+            grid-template-columns: repeat(5, 1fr);
+        }
+        li{
+            align-self: stretch;
+            justify-self: center;
+        }
+    } 
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mb"
+        "mb"
+        "me"
+        "me"
+        "mx"
+        "mx"
+        "ml";
+    }
+}
+

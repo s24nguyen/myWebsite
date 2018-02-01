@@ -1,0 +1,8 @@
+//a links
+@mixin aLink{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    transition: all 1s ease;
+}

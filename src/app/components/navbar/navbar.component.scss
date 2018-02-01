@@ -1,47 +1,69 @@
 @import '~sass/variables';
+@import "~sass/mixins";
 
 nav{
-    // background: rgb(80, 76, 76);
+    color: $customWhite;
+    background: darken($customBackground,10);
+    font-size: 15px;
+    text-align: center;
+    height: 100%;
     ul{
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-rows: repeat(5, 1fr);
         
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+        height: 100%;
+    }
+    li{
+        padding-top: 60%;
+        border-bottom: 1px solid $customWhite;
+        background: transparent;
+        transition: all 1s ease;
 
-        @media screen and (min-width: 600px){
-            grid-template-columns: repeat(5, 1fr);
+        &:last-child{
+            //margin-bottom: 10px;
+            border-bottom: none;
+            overflow: hidden;
         }
-        li{
-            color: green;
-            border-right: 1px white solid;
-            //border-bottom: 3px $navBorder solid;
-            text-align: center;
-            font-size: 1.5em;
 
-            &:first-child{
-                // grid-column-start: 2;
-                // grid-column-end: 3;
-            }
-            &:last-child{
-                border-right: none;
-            }
-
-            a{
-                display: block;
-                cursor: pointer;
-                transition: letter-spacing 1s ease;
-                
-            &:hover{
-                letter-spacing: 2.5px;
-            }
+        &:hover{
+            background: $customRed;
+            
+            &:nth-child(odd){
+                background: $customBlue;
             }
         }
     }
+    a{
+        height: 100%;
+    
+    &:hover{
+        letter-spacing: 1.3px;
+        transform: scale(1.1);
+    }
 }
+}
+    
+@media screen and (max-width: 760px){
+    nav{
+        ul{
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: none;
+        }
+        li{
+            align-self: center;
+            padding-top: 30px;
+            height: 100%;
+            border-bottom: none;
+            border-right: 1px solid $customWhite;
 
-img{
-    max-width: 50%;
-    height: auto;
+            &:last-child{
+                margin-bottom: 0;
+                //padding-bottom: 10px;
+                border-right: none;
+            }
+        }
+        a:hover{
+            transform: none;
+        }
+    }
 }

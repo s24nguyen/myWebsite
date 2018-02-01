@@ -1,8 +1,21 @@
 @import './variables';
 @import './mixins';
 
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+
 body, html, h1{
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    @include aLink;
 }

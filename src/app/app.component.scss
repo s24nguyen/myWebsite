@@ -1,4 +1,7 @@
+@import "~sass/variables";
+
 #background{
-    background: black;
+    background: $customBackground;
+    min-height: 100vh;
     height: auto;
 }
