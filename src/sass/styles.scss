@@ -3,6 +3,7 @@
 
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Dosis:600|Racing+Sans+One');
 
 body, html, h1{
     height: 100%;
@@ -19,3 +20,4 @@ ul{
 a{
     @include aLink;
 }
+

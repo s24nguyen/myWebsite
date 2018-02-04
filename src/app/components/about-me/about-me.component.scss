@@ -9,6 +9,7 @@
 
     width: 100vw;
     height: 100vh;
+    font-family: $racing;
 }
 
 header{
@@ -17,6 +18,7 @@ header{
 main{
     background: $customBackground;
     padding: 10px;
+    text-align: center;
     grid-area: content;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -31,24 +33,105 @@ main{
     "ml ml ml ml ml mx mx"
     "ml ml ml ml ml mx mx";
 
-    div{
-        background: snow;
-        &:nth-child(even){
-            background: grey;
+
+    .myBackground{
+        background: $customWhite;
+        grid-area: mb;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "h1 h1"
+        "pic pic"
+        "p p";
+
+        h1{
+            grid-area: h1;
+        }
+        .profilePic{
+            grid-area: pic;
+            height: 275px;
+            width: auto;
+            align-self: center;
+            justify-self: center;
+        }
+        p{
+            grid-area: p;
+            font-family: $dosis;
+            padding: 0px 10px;
+            margin-top: -15px;
+            text-align: justify;
+        }
+        
+    }
+
+
+    .myEducation{
+        background: darken($customWhite, 10);
+        grid-area: me;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-auto-rows: minmax(50px, 150px);
+        grid-template-areas:
+        "h1"
+        "oup"
+        "deg"
+        "p";
+
+
+        h1{
+            grid-area: h1;
+        }
+        .OUPic{
+            grid-area: oup;
+            height:150px;
+            width: 150px;
+            justify-self: center;
+       
+        }
+        .degree{
+            grid-area: deg;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: -15px;
+
+            p{
+                padding: 0;
+                margin: 0;
+            }
+        }
+        p{
+            grid-area: p;
+            font-family: $dosis;
+            padding: 10px;
+            text-align: justify;
         }
     }
 
-    .myBackground{
-        grid-area: mb;
-    }
-    .myEducation{
-        grid-area: me;
-    }
+
     .myExperience{
+        background: $customWhite;
         grid-area: mx;
     }
+
+
     .myLinks{
+        background: darken($customWhite, 10);
         grid-area: ml;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+
+        a{
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: $customPurple;
+            }
+        }
     }
 }
 
@@ -80,6 +163,13 @@ main{
         "mx"
         "mx"
         "ml";
+
+        .myBackground {
+            p{
+                margin-top: 0px;
+                padding: 10px;
+            }
+        }
     }
 }
 
