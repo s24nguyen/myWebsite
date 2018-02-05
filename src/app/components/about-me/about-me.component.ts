@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JOBS } from '../../mock-db';
 
 @Component({
   selector: 'app-about-me',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
+
+  jobs = JOBS;
 
   constructor() { }
 

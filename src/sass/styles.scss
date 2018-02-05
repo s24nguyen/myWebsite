@@ -3,7 +3,7 @@
 
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome';
-@import url('https://fonts.googleapis.com/css?family=Dosis:600|Racing+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Racing+Sans+One');
 
 body, html, h1{
     height: 100%;
@@ -21,3 +21,6 @@ a{
     @include aLink;
 }
 
+.boldText{
+    font-weight: 900;
+}
