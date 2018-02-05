@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { BubblesComponent } from './components/bubbles/bubbles.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    BubblesComponent
   ],
   imports: [
     BrowserModule,
