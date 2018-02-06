@@ -33,11 +33,12 @@ main{
     "ml ml ml ml ml mx mx"
     "ml ml ml ml ml mx mx";
 
-    // #bgColorChange{
-    //     background: $customBackground;
-    //     grid-column: 1 / 7;
-    //     grid-row: 1 / 7;
-    // }
+    .bgColorChange{
+        background: $customBackground;
+        transition: all 1s ease;
+        grid-column: 1 / 7;
+        grid-row: 1 / 7;
+    }
 
     .myBackground{
         background: $customWhite;
@@ -160,6 +161,11 @@ main{
     }
 }
 
+.gridGapColor{
+    background: $customPurple !important;
+    transition: all 1s ease;
+}
+
 @media screen and(max-width: 760px){
     .container{
         grid-template-columns: 1fr;
@@ -168,15 +174,6 @@ main{
         "navbar"
         "content";
     }
-    // header{
-    //     ul{
-    //         grid-template-columns: repeat(5, 1fr);
-    //     }
-    //     li{
-    //         align-self: stretch;
-    //         justify-self: center;
-    //     }
-    // } 
 
     main{
         grid-template-columns: 1fr;
@@ -197,7 +194,6 @@ main{
 
         .myBackground {
             p{
-                margin-top: 0px;
                 padding: 10px;
             }
 

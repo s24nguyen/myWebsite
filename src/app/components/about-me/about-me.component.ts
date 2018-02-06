@@ -9,10 +9,23 @@ import { JOBS } from '../../mock-db';
 export class AboutMeComponent implements OnInit {
 
   jobs = JOBS;
+  hoverTest: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  highlight(){
+    if(!this.hoverTest){
+      this.hoverTest = true;
+    }
+  }
+  unHighlight(){
+    if(this.hoverTest){
+      this.hoverTest = false;
+    }
   }
 
 }
