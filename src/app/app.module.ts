@@ -8,6 +8,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { BubblesComponent } from './components/bubbles/bubbles.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { BakeryComponent } from './components/bakery/bakery.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { BubblesComponent } from './components/bubbles/bubbles.component';
     NavbarComponent,
     HomeComponent,
     AboutMeComponent,
-    BubblesComponent
+    BubblesComponent,
+    HobbiesComponent,
+    ProjectsComponent,
+    BakeryComponent
   ],
   imports: [
     BrowserModule,

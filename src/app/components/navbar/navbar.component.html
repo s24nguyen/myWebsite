@@ -1,12 +1,12 @@
 <nav>
   <ul>
-    <li>
-      <a routerLink="/home"><i class="fa fa-home" aria-hidden="true"> <br>Home</i></a>
+    <li routerLink="/home" [routerLinkActive]="['activeLink2']" [routerLinkActiveOptions]="{exact:true}">
+      <a><i class="fa fa-home" aria-hidden="true"> <br>Home</i></a>
     </li>
-    <li>
-      <a><i class="fa fa-user" aria-hidden="true"><br>About Me</i></a>
+    <li routerLink="/aboutMe" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">
+      <a><i class="fa fa-user" aria-hidden="true"><br>About<br> Me</i></a>
     </li>
-    <li>
+    <li routerLink="/hobbies" routerLinkActive="activeLink2" [routerLinkActiveOptions]="{exact:true}">
       <a><i class="fa fa-gamepad" aria-hidden="true"><br>Hobbies</i></a>
     </li>
     <li>

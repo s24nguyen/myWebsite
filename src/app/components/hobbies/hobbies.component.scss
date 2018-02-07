@@ -1,0 +1,212 @@
+@import '~sass/variables';
+@import "~sass/mixins";
+
+.container{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: 
+    "navbar content";
+
+    width: 100vw;
+    height: 100vh;
+    font-family: $racing;
+}
+
+header{
+    grid-area: navbar;
+}
+main{
+    background: $customBackground;
+    padding: 10px;
+    text-align: center;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "ml ml ml ml ml mx mx"
+    "ml ml ml ml ml mx mx";
+
+    .bgColorChange{
+        background: $customBackground;
+        transition: all 1s ease;
+        grid-column: 1 / 7;
+        grid-row: 1 / 7;
+    }
+
+    .myBackground{
+        background: $customWhite;
+        grid-area: mb;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px auto auto;
+        grid-template-areas:
+        "h1 h1"
+        "pic pic"
+        "p p";
+
+        h1{
+            grid-area: h1;
+        }
+        .profilePic{
+            grid-area: pic;
+            height: 400px;
+            width: auto;
+            align-self: start;
+            justify-self: center;
+        }
+        p{
+            grid-area: p;
+            font-family: $dosis;
+            padding: 0px 10px;
+            //margin-top: -15px;
+            text-align: justify;
+        }
+        
+    }
+
+
+    .myEducation{
+        background: darken($customWhite, 10);
+        grid-area: me;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px repeat(3, auto);
+        grid-auto-rows: minmax(50px, 150px);
+        grid-template-areas:
+        "h1"
+        "oup"
+        "deg"
+        "p";
+
+
+        h1{
+            grid-area: h1;
+        }
+        .OUPic{
+            grid-area: oup;
+            height:150px;
+            width: 150px;
+            justify-self: center;
+       
+        }
+        .degree{
+            grid-area: deg;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: -15px;
+
+            p{
+                padding: 0;
+                margin: 0;
+            }
+        }
+        p{
+            grid-area: p;
+            font-family: $dosis;
+            padding: 10px;
+            text-align: justify;
+        }
+    }
+
+
+    .myExperience{
+        background: $customWhite;
+        grid-area: mx;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto;
+
+        .workSection{
+            text-align: start;
+            padding: 10px;
+            border-top: 2px solid $customBackground;
+        }
+
+        p{
+            font-family: $dosis;
+            padding: 10px;
+            margin: 0;
+        }
+        
+        small{
+            font-family: $dosis;
+            padding: 10px;
+        }
+    }
+
+
+    .myLinks{
+        background: darken($customWhite, 10);
+        grid-area: ml;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+
+        a{
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: $customPurple;
+            }
+        }
+    }
+}
+
+.gridGapColor{
+    background: $customPurple !important;
+    transition: all 1s ease;
+}
+
+@media screen and(max-width: 760px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr;
+        grid-template-areas: 
+        "navbar"
+        "content";
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "mb"
+        "mb"
+        "ml"
+        "me"
+        "me"
+        "mx"
+        "mx";
+
+        .bgColorChange{
+            grid-column: unset;
+            grid-row: unset;
+            display: none;
+        }
+
+        .myBackground {
+            p{
+                padding: 10px;
+            }
+
+            .profilePic{
+                height: 275px;
+                width: auto;
+            }
+        }
+
+        .degree{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
