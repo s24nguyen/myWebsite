@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { JOBS } from '../../mock-db';
+import { Job } from '../../classes/jobBlock';
+
+import { JobListService } from '../../services/job-list.service';
 
 @Component({
   selector: 'app-about-me',
@@ -8,14 +10,18 @@ import { JOBS } from '../../mock-db';
 })
 export class AboutMeComponent implements OnInit {
 
-  jobs = JOBS;
+  jobs:Job[];
   hoverTest: boolean = false;
 
-  constructor() { }
+  constructor(private jobListService : JobListService) { }
 
   ngOnInit() {
+    this.getJobs();
   }
 
+  getJobs(): void {
+    this.jobListService.getJobList().subscribe(jobs => this.jobs = jobs);
+  }
 
   highlight(){
     if(!this.hoverTest){

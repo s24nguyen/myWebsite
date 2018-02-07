@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { BubblesComponent } from './components/bubbles/bubbles.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BakeryComponent } from './components/bakery/bakery.component';
+
+import { JobListService } from './services/job-list.service';
 
 
 @NgModule({
@@ -26,9 +29,10 @@ import { BakeryComponent } from './components/bakery/bakery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [JobListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
