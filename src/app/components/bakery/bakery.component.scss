@@ -1,0 +1,68 @@
+@import '~sass/variables';
+@import "~sass/mixins";
+
+.container{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: 
+    "navbar content";
+
+    width: 100vw;
+    height: 100vh;
+    font-family: $racing;
+}
+
+header{
+    grid-area: navbar;
+
+        //keeps navbar from expanding with main content
+        position: fixed;
+        height: 100%;
+        max-height: 100vh;
+}
+
+main{
+    background: $customBackground;
+    padding: 10px;
+    text-align: center;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "mb mb mb me me mx mx"
+    "ml ml ml ml ml mx mx"
+    "ml ml ml ml ml mx mx";
+
+    
+    
+}
+
+@media screen and(max-width: 760px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr;
+        grid-template-areas: 
+        "navbar"
+        "content";
+    }
+
+    header{
+        grid-area: navbar;
+        
+        //removes so looks nice on small screen
+        position: unset;
+        height: unset;
+        max-height: unset;
+ 
+    }
+
+    main{
+       
+    }
+}

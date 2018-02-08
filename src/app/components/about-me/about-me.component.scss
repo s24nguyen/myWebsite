@@ -14,7 +14,13 @@
 
 header{
     grid-area: navbar;
+
+        //keeps navbar from expanding with main content
+        position: fixed;
+        height: 100%;
+        max-height: 100vh;
 }
+
 main{
     background: $customBackground;
     padding: 10px;
@@ -173,6 +179,16 @@ main{
         grid-template-areas: 
         "navbar"
         "content";
+    }
+
+    header{
+        grid-area: navbar;
+        
+        //removes so looks nice on small screen
+        position: unset;
+        height: unset;
+        max-height: unset;
+ 
     }
 
     main{
