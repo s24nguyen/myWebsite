@@ -12,4 +12,8 @@ export class BakeryComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToDiv(fragment: string): void {
+    window.location.hash = fragment;
+}
+
 }

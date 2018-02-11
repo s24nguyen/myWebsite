@@ -8,7 +8,7 @@ export class JobListService {
   constructor(private http: HttpClient) { }
 
   public getJobList(): Observable<any> {
-    return this.http.get("../assets/data/jobs.json")
+    return this.http.get("assets/data/jobs.json")
   }
 
 }
