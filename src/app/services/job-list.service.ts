@@ -11,4 +11,7 @@ export class JobListService {
     return this.http.get("assets/data/jobs.json")
   }
 
+  public getFoodList(): Observable<any> {
+    return this.http.get("assets/data/food.json")
+  }
 }

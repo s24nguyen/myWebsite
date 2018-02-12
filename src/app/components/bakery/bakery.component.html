@@ -15,15 +15,19 @@
 
       <section id="food">
 
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
-            <div class="thumbnail">Bakery Item</div>
+            <div *ngFor = "let foods of food">
+              <div class="thumbnail">
+                <div class="foodoverlay"></div>
+                  <img src="{{foods.image}}" alt="">
+                  <div class="info">
+                    <h1>{{foods.foodName}}</h1>
+                    <p>{{foods.description}}</p>
+                    <small>{{foods.price}}</small>
+                  </div>
+              </div>
+                  
+            
+            </div>
         
       </section>
 
