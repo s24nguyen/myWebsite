@@ -1,114 +1,114 @@
 [
     {
-        "image": "../../assets/images/food/cookies.jpg",
+        "image": "assets/images/food/cookies.jpg",
         "foodName": "Chocolate Chip Cookies",
         "description": "Classic chocolate chip cookies. Can't beat that!",
         "price": "$.50/each"
     },
     {
-        "image": "../../assets/images/food/cupcake.jpg",
+        "image": "assets/images/food/cupcake.jpg",
         "foodName": "Red Velvet Cupcake",
         "description": "Red velvet cake, whipped cream cheese frosting, and a chocolate flower on top",
         "price": "$3.25/each"
     },
     {
-        "image": "../../assets/images/food/cspecans.jpg",
+        "image": "assets/images/food/cspecans.jpg",
         "foodName": "Cinnamon Sugar Pecans",
         "description": "Pecan halves roasted with cinnamon and cane sugar",
         "price": "$4.25/sm.....$8.00/lg"
     },
     {
-        "image": "../../assets/images/food/swanpuffs.jpg",
+        "image": "assets/images/food/swanpuffs.jpg",
         "foodName": "Swan Cream Puffs",
         "description": "Elegantly crafted cream puffs with whipped cream filling",
         "price": "$3.25/each"
     },
     {
-        "image": "../../assets/images/food/tiramisu.jpg",
+        "image": "assets/images/food/tiramisu.jpg",
         "foodName": "Tiramisu",
         "description": "Rich layered Italian dessert with espresso dipped ladyfingers, mascarpone cheese frosting topped with shaved chocolate, and extra Kahlua",
         "price": "$4.00/slice......$22/cake"
     },
     {
-        "image": "../../assets/images/food/cocobread.jpg",
+        "image": "assets/images/food/cocobread.jpg",
         "foodName": "Coconut Bread",
         "description": "Sweet bread with toasted shredded coconut",
         "price": "$2.50/each"
     },
     {
-        "image": "../../assets/images/food/frenchmacarons.jpg",
+        "image": "assets/images/food/frenchmacarons.jpg",
         "foodName": "French Macarons",
         "description": "Light and airy cookies with fillings. Flavor varies",
         "price": "$2.25/each"
     },
     {
-        "image": "../../assets/images/food/frenchbaguet.jpg",
+        "image": "assets/images/food/frenchbaguet.jpg",
         "foodName": "French Baguet",
         "description": "Freshly made bread",
         "price": "$2.50/each"
     },
     {
-        "image": "../../assets/images/food/beignets.jpg",
+        "image": "assets/images/food/beignets.jpg",
         "foodName": "Beignets",
         "description": "Delicious deep fried dough dusted with powdered sugar",
         "price": "$.75/each"
     },
     {
-        "image": "../../assets/images/food/bagels.jpg",
+        "image": "assets/images/food/bagels.jpg",
         "foodName": "Bagels",
         "description": "Soft and chewy bagels. Flavor varies",
         "price": "$.75/each"
     },
     {
-        "image": "../../assets/images/food/applepie.jpg",
+        "image": "assets/images/food/applepie.jpg",
         "foodName": "Apple Pie",
         "description": "Classic apple pie recipe",
         "price": "$14/pie"
     },
     {
-        "image": "../../assets/images/food/applerose.jpg",
+        "image": "assets/images/food/applerose.jpg",
         "foodName": "Apple Rose",
         "description": "Apple pastry rolled into a rose shape, with a cinnamon sugar filling",
         "price": "$3.50/each"
     },
     {
-        "image": "../../assets/images/food/dutchapple.jpg",
+        "image": "assets/images/food/dutchapple.jpg",
         "foodName": "Dutch Apple Pie",
         "description": "Classic dutch apple pie recipe with a delicious crumble topping",
         "price": "$14/pie"
     },
     {
-        "image": "../../assets/images/food/chocobowl.jpg",
+        "image": "assets/images/food/chocobowl.jpg",
         "foodName": "Chocolate Bowl",
         "description": "Chocolate bowl filled with whipped cream and fresh fruit",
         "price": "$4.50/each"
     },
     {
-        "image": "../../assets/images/food/chocomousse.jpg",
+        "image": "assets/images/food/chocomousse.jpg",
         "foodName": "Chocolate Mousse",
         "description": "Airy chocolate mousse topped with crushed peanuts",
         "price": "$3.50/each"
     },
     {
-        "image": "../../assets/images/food/creampuffs.jpg",
+        "image": "assets/images/food/creampuffs.jpg",
         "foodName": "Cream Puffs",
         "description": "Classic cream puff recipe with chocolate dipped shell",
         "price": "$1.50/each"
     },
     {
-        "image": "../../assets/images/food/frenchtoast.jpg",
+        "image": "assets/images/food/frenchtoast.jpg",
         "foodName": "French Toast",
         "description": "Delicious french toast made with Kings Hawaiian rolls",
         "price": "$.75/roll (two slices)"
     },
     {
-        "image": "../../assets/images/food/partymix.jpg",
+        "image": "assets/images/food/partymix.jpg",
         "foodName": "Party Mix",
         "description": "Mix of various snacks. Perfect for parties or snacking. Flavor varies",
         "price": "$3.50/sm......$6.50/lg"
     },
     {
-        "image": "../../assets/images/food/pecanpie.jpg",
+        "image": "assets/images/food/pecanpie.jpg",
         "foodName": "Pecan Pie",
         "description": "Classic pecan pie recipe",
         "price": "$14/pie"

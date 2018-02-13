@@ -9,7 +9,7 @@
 
     width: 100vw;
     height: 100vh;
-    font-family: $racing;
+    font-family: $kav;
 }
 
 header{
@@ -67,6 +67,13 @@ main{
         align-self: center;
         justify-self: center;
         max-width: 500px;
+
+        h1{
+            font-size: 3em;
+        }
+        p{
+            font-size: 1.3em;
+        }
     }
     
 
@@ -108,7 +115,7 @@ main{
 
             &:hover{
                 .foodoverlay{
-                    opacity: .4;
+                    opacity: .5;
                     z-index: 1;
                 }
                 .info{
@@ -131,14 +138,26 @@ main{
             color: white;
             transition: 1s ease;
             opacity: 0;
+            padding: 5px;
         }
     }
 
     footer{
         grid-area: hours;
+        background: $customBackground;
+        color: #FBF9EC;
+
+        display: flex;
+        justify-content: center;
     }
 }
 
+.spacing{
+    padding-right: 15px;
+}
+.hours{
+    text-align: start;
+}
 @media screen and(max-width: 760px){
     .container{
         grid-template-columns: 1fr;
@@ -152,9 +171,11 @@ main{
         grid-area: navbar;
         
         //removes so looks nice on small screen
-        position: unset;
+        position: sticky;
+        top: 0;
         height: unset;
         max-height: unset;
+        z-index: 10;
  
     }
 
@@ -162,7 +183,13 @@ main{
        
         section{
             grid-template-columns: auto;
+            grid-auto-rows: minmax(50px, auto);
+            grid-gap: 10px;
             width: unset;
+        }
+
+        footer{
+            margin-top: 10%;
         }
     }
 }
