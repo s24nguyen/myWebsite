@@ -2,23 +2,11 @@
 @import "~sass/mixins";
 
 .container{
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    grid-template-areas: 
-    "navbar content";
-
-    width: 100vw;
-    height: 100vh;
-    font-family: $racing;
+    @include pageContainer;
 }
 
 header{
-    grid-area: navbar;
-
-        //keeps navbar from expanding with main content
-        position: fixed;
-        height: 100%;
-        max-height: 100vh;
+    @include navbarPosition;
 }
 
 main{

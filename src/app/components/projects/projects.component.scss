@@ -1,0 +1,42 @@
+@import '~sass/variables';
+@import "~sass/mixins";
+
+.container{
+    @include pageContainer;
+    grid-template-rows: 1fr 10%;
+    grid-template-areas: 
+    "navbar content"
+    "navbar footer";
+}
+
+header{
+    @include navbarPosition;
+}
+
+main{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "projectArea";
+
+    background: $customWhite;
+
+}
+
+.projectArea{
+    grid-area: projectArea;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: red;
+    text-align: center;
+    padding: 15px 25px;
+}
