@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -30,7 +30,8 @@ import { JobListService } from './services/job-list.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2PageScrollModule
   ],
   providers: [JobListService],
   bootstrap: [AppComponent]
