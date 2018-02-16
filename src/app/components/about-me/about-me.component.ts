@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Job } from '../../classes/jobBlock';
 
-import { JobListService } from '../../services/job-list.service';
+import { GetDataService } from '../../services/get-data.service';
 
 @Component({
   selector: 'app-about-me',
@@ -13,14 +13,14 @@ export class AboutMeComponent implements OnInit {
   jobs:Job[];
   hoverTest: boolean = false;
 
-  constructor(private jobListService : JobListService) { }
+  constructor(private getDataService : GetDataService) { }
 
   ngOnInit() {
     this.getJobs();
   }
 
   getJobs(): void {
-    this.jobListService.getJobList().subscribe(jobs => this.jobs = jobs);
+    this.getDataService.getJobList().subscribe(jobs => this.jobs = jobs);
   }
 
   highlight(){

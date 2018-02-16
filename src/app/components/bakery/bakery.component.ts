@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Food } from '../../classes/food';
 
-import { JobListService } from '../../services/job-list.service';
+import { GetDataService } from '../../services/get-data.service';
 
 @Component({
   selector: 'app-bakery',
@@ -12,7 +12,7 @@ export class BakeryComponent implements OnInit {
 
   food: Food[];
 
-  constructor(private jobListService : JobListService) { }
+  constructor(private getDataService : GetDataService) { }
 
   ngOnInit() {
     this.getFoods();
@@ -23,7 +23,7 @@ export class BakeryComponent implements OnInit {
 }
 
 getFoods():void {
-  this.jobListService.getFoodList().subscribe(foods => this.food = foods);
+  this.getDataService.getFoodList().subscribe(foods => this.food = foods);
 
 }
 

@@ -1,0 +1,17 @@
+<div class="container">
+    <ngx-carousel
+    [inputs]="carouselTile"
+    (carouselLoad)="carouselTileLoad($event)">
+    
+          <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+            <div class="tileBox">
+                <img src="{{Tile.image}}" alt="">
+                <p>{{Tile.details}}</p>
+            </div>
+              
+          </ngx-tile>
+    
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
+</div>

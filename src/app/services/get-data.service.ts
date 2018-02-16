@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
+
 @Injectable()
-export class JobListService {
+export class GetDataService {
 
   constructor(private http: HttpClient) { }
 
@@ -14,4 +15,9 @@ export class JobListService {
   public getFoodList(): Observable<any> {
     return this.http.get("assets/data/food.json")
   }
+
+  public getLotsList(): Observable<any> {
+    return this.http.get("assets/data/lots.json")
+  }
+
 }

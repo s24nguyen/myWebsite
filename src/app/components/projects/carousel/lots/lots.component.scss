@@ -1,0 +1,70 @@
+@import '~sass/variables';
+@import "~sass/mixins";
+
+.container{
+    max-width: 100%;
+}
+
+  .leftRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 75px;
+    height: 80%;
+    left: 0;
+    background: rgba(1,1,1,0);
+    color: $customWhite;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .7s ease;
+
+    &:hover{
+        font-size: 1.5em;
+        color: snow;
+        background: rgba(252, 247, 247, 0.05);
+    }
+  }
+
+  .rightRs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    width: 75px;
+    height: 80%;
+    right: 0;
+    background: rgba(1,1,1,0);
+    color: $customWhite;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: .7s ease;
+
+    &:hover{
+        font-size: 1.5em;
+        color: snow;
+        background: rgba(252, 247, 247, 0.05);
+    }
+  }
+
+  img{
+      max-width: 100%;
+      max-height: 50vh;
+      height: auto;
+  }
+
+  .tileBox{
+      height: 65vh;
+  }
+
+
+  @media screen and(max-width: 760px){
+
+    ngx-carousel{
+        width: 100vw;
+    }
+    .tileBox{
+        height: 80vh;
+    }
+  
+  }

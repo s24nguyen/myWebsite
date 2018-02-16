@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -12,8 +15,9 @@ import { BubblesComponent } from './components/bubbles/bubbles.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BakeryComponent } from './components/bakery/bakery.component';
+import { LotsComponent } from './components/projects/carousel/lots/lots.component';
 
-import { JobListService } from './services/job-list.service';
+import { GetDataService } from './services/get-data.service';
 
 
 @NgModule({
@@ -25,15 +29,17 @@ import { JobListService } from './services/job-list.service';
     BubblesComponent,
     HobbiesComponent,
     ProjectsComponent,
-    BakeryComponent
+    BakeryComponent,
+    LotsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    Ng2PageScrollModule
+    Ng2PageScrollModule,
+    NgxCarouselModule
   ],
-  providers: [JobListService],
+  providers: [GetDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
