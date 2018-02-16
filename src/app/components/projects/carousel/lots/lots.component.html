@@ -2,6 +2,21 @@
     <ngx-carousel
     [inputs]="carouselTile"
     (carouselLoad)="carouselTileLoad($event)">
+    <ngx-tile NgxCarouselItem>
+        <div class="tileBox">
+            <h1>Lots!</h1>
+            <h4>Project Description</h4>
+            <p class="projectDetails">Lots! is a parking system designed to help people find open spots in large establishments 
+                such as universities, sporting venues, airports, etc. The system is comprised of 
+                two parts: hardware and software. The hardware includes a Raspberry Pi equipped with a camera module and 
+                image recognition technology. The software includes a web based application that users (parkers) can easily
+                access to find parking spots. The status of the lots is captured by the pi and the results are displayed
+                on our web component. The following screenshots show my UI work on the web application 
+                of our system.</p>
+            <h4>My Role:</h4>
+            <p>Lead UI Developer</p>
+        </div>
+    </ngx-tile>
     
           <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
             <div class="tileBox">

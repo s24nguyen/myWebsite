@@ -22,11 +22,12 @@ nav{
         outline: none;
         transition: all 1s ease;
         cursor: pointer;
+        overflow: hidden;
 
         &:last-child{
             //margin-bottom: 10px;
             border-bottom: none;
-            overflow: hidden;
+            //overflow: hidden;
         }
 
         &:hover{

@@ -3,6 +3,7 @@
 
 .container{
     max-width: 100%;
+    font-family: $dosis;
 }
 
   .leftRs {
@@ -10,7 +11,7 @@
     margin: auto;
     top: 0;
     width: 75px;
-    height: 80%;
+    height: 90%;
     left: 0;
     background: rgba(1,1,1,0);
     color: $customWhite;
@@ -31,7 +32,7 @@
     margin: auto;
     top: 0;
     width: 75px;
-    height: 80%;
+    height: 90%;
     right: 0;
     background: rgba(1,1,1,0);
     color: $customWhite;
@@ -55,16 +56,33 @@
 
   .tileBox{
       height: 65vh;
+
+      p{
+          text-align: center;
+          margin: 0 auto;
+          width: 75%;
+          padding-top: 10px;
+      }
   }
 
+  .projectDetails{
+      text-align: justify !important;
+  }
 
   @media screen and(max-width: 760px){
 
     ngx-carousel{
         width: 100vw;
     }
+
     .tileBox{
         height: 80vh;
+
+        p{
+            text-align: center;
+            margin: 0 auto;
+            width: 85%;
+        }
     }
   
   }

@@ -1,8 +1,5 @@
 [
     {
-        "details" : "Lots! is a parking system designed to help people find open spots in large establishments such as universities, sporting venues, airports, etc. The system is comprised of two parts: hardware and software. The hardware include a Raspberry Pi equipped with a camera module and image recognition technology. The status of the lots is captured by the pi and displayed on a web based application that users can easily access. The following screenshots show my UI work on the web application of our system. "
-    },
-    {
         "image" : "assets/images/Lots/01_parkerHome.PNG",
         "details" : "This is the first page that users will see. Here the user will enter a location in which they want to find parking"
     },
