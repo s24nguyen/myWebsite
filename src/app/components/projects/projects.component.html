@@ -5,7 +5,7 @@
 
   <main>
     <div class="projectArea">
-      <app-lots></app-lots>
+      <ng-container *ngComponentOutlet="project"></ng-container>
     </div>
     
   </main>
@@ -13,16 +13,16 @@
   <footer>
     <ul>
       <li>
-          <a>Lots!</a>
+          <a (click)="changeComponent(lots)">Lots!</a>
       </li>
       <li>
-          <a>AstroNoc</a>
+          <a (click)="changeComponent(astroNOC)">AstroNoc</a>
       </li>
       <li>
-          <a>???</a>
+          <a (click)="changeComponent(intro)">???</a>
       </li>
       <li>
-          <a>???</a>
+          <a (click)="changeComponent(intro)">???</a>
       </li>
     </ul>
   </footer>

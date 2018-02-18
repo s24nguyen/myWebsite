@@ -20,4 +20,8 @@ export class GetDataService {
     return this.http.get("assets/data/lots.json")
   }
 
+  public getAstroNOCList(): Observable<any> {
+    return this.http.get("assets/data/astroNOC.json")
+  }
+
 }
