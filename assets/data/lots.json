@@ -1,0 +1,54 @@
+[
+    {
+        "image" : "assets/images/Lots/01_parkerHome.PNG",
+        "details" : "This is the first page that users will see. Here the user will enter a location in which they want to find parking"
+    },
+    {
+        "image" : "assets/images/Lots/02_parkerHome.PNG",
+        "details" : "The search bar utilizes Google Maps API and will auto fill based on known locations/addresses"
+    },
+    {
+        "image" : "assets/images/Lots/03_parkerHome.PNG",
+        "details" : "In addition to typing in a location, users will also be able to click on the compass to grab their current GPS location"
+    },
+    {
+        "image" : "assets/images/Lots/04_parkerHome.PNG",
+        "details" : "This is the second page that users will see after searching for a location. Here a list of buildings that utlizes the Lots! system will be displayed alongside a map showing their exact location. The listed buildings are all within a 2 mile radius of the search location"
+    },
+    {
+        "image" : "assets/images/Lots/05_parkerHome.PNG",
+        "details" : "After selecting a building, users will be taken to the final section. Here users will be able to select individual parking lots and see real time status of the parking lot"
+    },
+    {
+        "image" : "assets/images/Lots/06_adminLogin.PNG",
+        "details" : "For the admin users of our system, this will be the page they land on. The user will be able to login or register for an admin account"
+    },
+    {
+        "image" : "assets/images/Lots/07_adminLogin.PNG",
+        "details" : "The registration form that admin users will have to fill out if they want to start managing their lots"
+    },
+    {
+        "image" : "assets/images/Lots/08_adminManage.PNG",
+        "details" : "The main dashboard for admins. Shows the status of the lots belonging to their buildings and a list of reservations"
+    },
+    {
+        "image" : "assets/images/Lots/09_adminManage.PNG",
+        "details" : "Reservation form that admins can use to reserve specific spots for events happening at their establishments"
+    },
+    {
+        "image" : "assets/images/Lots/10_adminManage.PNG",
+        "details" : "Once reservations are made, they will be displayed on a list on the right side of the dashboard"
+    },
+    {
+        "image" : "assets/images/Lots/11_parkerMobile.PNG",
+        "details" : "Mobile view for the first step of the parker home page"
+    },
+    {
+        "image" : "assets/images/Lots/12_parkerMobile.PNG",
+        "details" : "Mobile view for the second step of the parker home page"
+    },
+    {
+        "image" : "assets/images/Lots/13_parkerMobile.PNG",
+        "details" : "Mobile view for the third step of the parker home page"
+    }
+]
