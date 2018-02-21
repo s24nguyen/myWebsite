@@ -50,7 +50,7 @@ export class AstroNocComponent implements OnInit {
             transition: .4s;
           }
           .ngxcarouselPoint li.active {
-              background: #6b6b6b;
+              background: #C56700;
               transform: scale(1.2);
           }
         `

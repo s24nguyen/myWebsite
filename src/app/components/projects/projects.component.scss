@@ -65,12 +65,22 @@ footer{
         
         //align-self: center;
         transition: .7s ease;
-
-        &:hover{
-            transform: translateY(-10px);
-        }
     }
 }
+
+.active{
+    color: $customPurple2;
+    background: darken($customWhite, 55) !important;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 760px){
+    a:hover{
+            letter-spacing: 2px;
+            color: $customPurple;
+            background: darken($customWhite, 55) !important;
+        }
+    }
 
 
 @media screen and(max-width: 760px){
@@ -95,47 +105,54 @@ footer{
     }
     main{
        max-width: 100vw;
+       height: 90vh;
     }
 
     footer{
         grid-area: footer;
-        display: flex;
-       
-    
         background: $customWhite;
-        text-align: center;
         max-width: 100vw;
         padding: unset;
-        //width: 100vw;
-
+        
 
         ul{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 5px;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            margin: 1rem 10px;
+            grid-gap: .7rem;
+            overflow: hidden;
+                        
+            //border: .75px solid black;
+        
         }
 
         li{
-            width: 50%;
-            border-right: none;
-            border-bottom: .5px solid $customBackground;
-            align-self: center;
-            margin: 15px;
-            padding-bottom: 5px;
             
-    
-            &:last-child{
-                border-bottom: none;
-            }
+            width: 100%;
+            height: 150px;
+            border-right: none;
+            //border-bottom: .5px solid $customBackground;
+            // margin: 15px;
+            // padding-bottom: 5px;
+            background: darken($customWhite, 15);
+            font-size: 1.7em;
+            border-radius: 5px;
+          
+            // &:last-child{
+            //     border-bottom: none;
+            // }
         }
 
         a{
+            padding-top: 50px;
             &:hover{
                 transform: none;
+
             }
         }
     }
-
-    
 }

@@ -12,10 +12,10 @@
 
   <footer>
     <ul>
-      <li>
+      <li [class.active]="project == lots">
           <a (click)="changeComponent(lots)">Lots!</a>
       </li>
-      <li>
+      <li  [class.active]="project == astroNOC">
           <a (click)="changeComponent(astroNOC)">AstroNoc</a>
       </li>
       <li>

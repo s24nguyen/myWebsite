@@ -50,7 +50,7 @@ export class LotsComponent implements OnInit {
             transition: .4s;
           }
           .ngxcarouselPoint li.active {
-              background: #6b6b6b;
+              background: #67D584;
               transform: scale(1.2);
           }
         `
