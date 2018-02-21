@@ -100,14 +100,35 @@ footer{
     footer{
         grid-area: footer;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+       
     
         background: $customWhite;
         text-align: center;
         max-width: 100vw;
         padding: unset;
         //width: 100vw;
+
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        li{
+            width: 50%;
+            border-right: none;
+            border-bottom: .5px solid $customBackground;
+            align-self: center;
+            margin: 15px;
+            padding-bottom: 5px;
+            
+    
+            &:last-child{
+                border-bottom: none;
+            }
+        }
 
         a{
             &:hover{
