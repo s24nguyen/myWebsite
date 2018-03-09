@@ -1,0 +1,34 @@
+[
+    {
+        "image" : "assets/images/AstroNOC/01_AstroNOC.PNG",
+        "details" : "This is the login page that users will see upon entering our application. Login is to ensure that users are of the IT department"
+    },
+    {
+        "image" : "assets/images/AstroNOC/02_AstroNOC.PNG",
+        "details" : "This is the main dashboard that users will see. On the left there are gauges that show the cpu usage of servers. On the right there are alerts giving more details on how the servers/nodes are performing. At the bottom there are buttons that takes users to specific sections where they can drill down and see more info"
+    },
+    {
+        "image" : "assets/images/AstroNOC/03_AstroNOC.PNG",
+        "details" : "Here is an example of one of the sections that users can access via the buttons on the previous page. It shows more detail related to the specific system. If there was anything wrong, a message would be shown on the left side. The links on the bottom allows users to drill even further to see more details."
+    },
+    {
+        "image" : "assets/images/AstroNOC/04_AstroNOC.PNG",
+        "details" : "Here is another example of drilling down and seeing more details"
+    },
+    {
+        "image" : "assets/images/AstroNOC/05_AstroNOC.PNG",
+        "details" : "This page is accessible from clicking the more details link of each section. It shows even more details on the performance of individual nodes"
+    },
+    {
+        "image" : "assets/images/AstroNOC/06_AstroNOC.PNG",
+        "details" : "Users can also filter the graphs to see specific nodes only"
+    },
+    {
+        "image" : "assets/images/AstroNOC/07_AstroNOC.PNG",
+        "details" : "Here is an admin page for users who have admin rights. Here admins will be able to create messages that will notify usres of any issues"
+    },
+    {
+        "image" : "assets/images/AstroNOC/08_AstroNOC.PNG",
+        "details" : "This is the form that admins would fill out to create a notification"
+    }
+]

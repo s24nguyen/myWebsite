@@ -4,24 +4,24 @@ import { NgxCarousel } from 'ngx-carousel';
 import { GetDataService } from '../../../../services/get-data.service';
 
 @Component({
-  selector: 'app-lots',
-  templateUrl: './lots.component.html',
-  styleUrls: ['./lots.component.scss']
+  selector: 'app-astro-noc',
+  templateUrl: './astro-noc.component.html',
+  styleUrls: ['../lots/lots.component.scss']
 })
-export class LotsComponent implements OnInit {
+export class AstroNocComponent implements OnInit {
 
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
 
   constructor(private getDataService : GetDataService) { }
 
-
-  getLots(): void{
-    this.getDataService.getLotsList().subscribe(lots => this.carouselTileItems = lots);
+  getAstroNOC(): void{
+    this.getDataService.getAstroNOCList().subscribe(astroNOC => this.carouselTileItems = astroNOC);
   }
 
+
   ngOnInit() {
-    this.getLots();
+    this.getAstroNOC();
 
     this.carouselTile = {
       grid: {xs: 1, sm: 1, md: 1, lg: 2, all: 0},
@@ -50,7 +50,7 @@ export class LotsComponent implements OnInit {
             transition: .4s;
           }
           .ngxcarouselPoint li.active {
-              background: #67D584;
+              background: #C56700;
               transform: scale(1.2);
           }
         `

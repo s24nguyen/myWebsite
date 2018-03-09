@@ -15,10 +15,10 @@
 
       <section id="food">
 
-            <div *ngFor = "let foods of food">
+            <div *ngFor = "let foods of food" lazy-load-images>
               <div class="thumbnail">
                 <div class="foodoverlay"></div>
-                  <img src="{{foods.image}}" alt="">
+                  <img attr.data-src="{{foods.image}}" alt="">
                   <div class="info">
                     <h1>{{foods.foodName}}</h1>
                     <p>{{foods.description}}</p>

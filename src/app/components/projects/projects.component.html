@@ -5,16 +5,26 @@
 
   <main>
     <div class="projectArea">
-      <app-lots></app-lots>
+      <ng-container *ngComponentOutlet="project"></ng-container>
     </div>
     
   </main>
 
   <footer>
-    <h1>project list</h1>
-    <h1>project list</h1>
-    <h1>project list</h1>
-    <h1>project list</h1>
+    <ul>
+      <li [class.active]="project == lots">
+          <a (click)="changeComponent(lots)">Lots!</a>
+      </li>
+      <li [class.active]="project == astroNOC">
+          <a (click)="changeComponent(astroNOC)">AstroNOC</a>
+      </li>
+      <li>
+          <a (click)="changeComponent(intro)">???</a>
+      </li>
+      <li>
+          <a (click)="changeComponent(intro)">???</a>
+      </li>
+    </ul>
   </footer>
 
 </div>

@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
+import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { BakeryComponent } from './components/bakery/bakery.component';
 import { LotsComponent } from './components/projects/carousel/lots/lots.component';
 
 import { GetDataService } from './services/get-data.service';
+import { AstroNocComponent } from './components/projects/carousel/astro-noc/astro-noc.component';
+import { IntroComponent } from './components/projects/carousel/intro/intro.component';
 
 
 @NgModule({
@@ -30,14 +33,22 @@ import { GetDataService } from './services/get-data.service';
     HobbiesComponent,
     ProjectsComponent,
     BakeryComponent,
-    LotsComponent
+    LotsComponent,
+    AstroNocComponent,
+    IntroComponent
+  ],
+  entryComponents: [
+    LotsComponent,
+    AstroNocComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     Ng2PageScrollModule,
-    NgxCarouselModule
+    NgxCarouselModule,
+    LazyLoadImagesModule
   ],
   providers: [GetDataService],
   bootstrap: [AppComponent]
